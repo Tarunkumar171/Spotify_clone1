@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    border:border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial;
+}
+.sidebar{
+    width:300px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    padding:10px;
+}
+.nav-logo{
+    background-color: #111111;
+    border-radius: 10px;
+    padding:20px 10px;
+    margin-bottom: 30px;
+}
+span{
+    font-weight: 600;
+    font-size:15px;
+}
+.logo{
+    width:120px;
+}
+img{
+    width:100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding:8px 10px;
+}
+a{
+    text-decoration: none;
+    color:#b3b3b3;
+    font-size: 15px;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration:underline;
+    color:white;
+}
+.plus{
+    text-align: center;
+    padding-left: 65px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.playlist{
+    color:white;
+    padding: 30px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #302f2f;
+}
+.scroll-bar{
+    height:120px;
+    overflow-y: auto;
+}
+.scroll-bar::-webkit-scrollbar{
+    background: transparent;
+}
+.scroll-bar::-webkit-scrollbar-thumb{
+    background: transparent;
+    width:10px;
+}
+.scroll-bar:hover::-webkit-scrollbar-thumb{
+    background-color: #ebdfe2;
+    width:5px;
+}
+p{
+  font-size:small;
+  margin: 12px 0;
+}
+button{
+    padding: 5px 15px;
+    border-radius:20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 5px;
+}
+.extra{
+    margin-top: 10px;
+}
+.new-button button{
+    padding:10px 30px;
+    background: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.new-button button:hover{
+    border:1px solid yellow;
+    background-color: rgb(142, 120, 120);
+    color:black;
+}
+.main-nav{
+    margin-left: 300px;
+    background-color: #181818;
+}
+.top-nav{
+   padding-top: 30px;
+   padding-right: 30px;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.prev-button button{
+    background: transparent;
+    border:0;
+}
+.prev-button i{
+    color: aliceblue;
+    margin-right: 0.2px;
+    font-size: 15px;
+}
+.login-button button{
+    background: transparent;
+    border:0;
+}
+.sign-up{
+    color:aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sign-up:hover{
+    color:greenyellow
+}
+.login-button .login-in{
+    color:black;
+    font-size: 15px;
+    font-weight: 500;
+    background: aliceblue;
+    padding:5px 10px;
+    border-radius: 20px;
+}
+.login-in:hover{
+    background-color: aqua;
+}
+.music-playlist{
+    padding: 20px 40px;
+    color:red;
+}
+h2{
+    color:white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.cards{
+    display:flex;
+    gap:25px;
+    overflow: hidden;
+}
+.item{
+    width:200px;
+    background-color: #272626;
+    cursor:pointer;
+    border-radius: 6px;
+    padding:15px;
+}
+.item:hover{
+    background-color: #3d3c3c;
+}
+.music-playlist .cards .item img{
+    width:100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.play-btn{
+    color:black;
+   position: relative;
+}
+.play-btn i{
+    position: absolute;
+    background: rgb(31, 165, 42);
+    border-radius: 50%;
+    padding: 10px;
+    right:10px;
+    top:-60px;
+    opacity:0;
+}
+.item h4{
+    color:white;
+}
+.item p{
+    color:white;
+}
+.item p:hover{
+    text-decoration: underline;
+}
+.item:hover .play-btn i{
+    opacity: 1;
+}
+.main-nav{
+    background-color: #030303;
+}
+.search{
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+   font-size: 20px;
+   background-color: #030303;
+   color:white;
+   border: 2px solid white;
+   border-radius: 20px;
+}
+span i{
+    font-size: 20px;
+    color:white;
+}
+.footer-section{
+    padding:20px 40px;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer-links{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.footer-columns{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.footer-links div{
+    color:white;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: large;
+}
+.footer-links ul li{
+    list-style: none;
+    margin:6px 0;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color:gray;
+    font-size: 14px;
+    cursor: pointer; 
+} 
+.footer-links ul li a:hover{
+    text-decoration:underline;
+    color:white
+}
+.social-links i{
+    color:white;
+    background-color: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background-color: grey;
+}
+button:hover{
+    cursor:pointer;
+}
